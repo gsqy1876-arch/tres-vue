@@ -17,7 +17,7 @@ useHead({
       Tailwind + Nuxt 安装成功!
     </h1> -->
     <NuxtLink to="/3dView" class="text-3xl font-bold text-gray-900 dark:text-green-400 transition-colors duration-300">
-      查看 3D 全景
+      查看 3D 房屋全景
     </NuxtLink>
   </div>
 </template>
