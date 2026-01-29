@@ -6,4 +6,17 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss'
   ],
   compatibilityDate: '2025-01-01',
+  vite: {
+    build: {
+      chunkSizeWarningLimit: 1000,
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            // 单独打包 Three.js
+            three: ['three'],
+          }
+        }
+      }
+    }
+  }
 })
